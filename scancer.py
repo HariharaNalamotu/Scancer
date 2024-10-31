@@ -189,7 +189,7 @@ QPushButton {
         execution_path = os.getcwd()
         prediction = CustomImageClassification()
         prediction.setModelTypeAsResNet50()
-        prediction.setModelPath("/Users/Hari/Documents/scancer/trained_model.h5")
+        prediction.setModelPath("trained_model.h5")
         prediction.setJsonPath(os.path.join(execution_path, "Data_model_classes.json"))
         prediction.loadModel()
         predictions, probabilities = prediction.classifyImage(self.fileName, result_count=4)
